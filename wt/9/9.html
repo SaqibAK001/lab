@@ -12,14 +12,13 @@
             padding: 10px; 
             margin-bottom: 10px; 
             min-height: 100px; 
-            white-space: pre-line; /* To display new lines */ 
+            white-space: pre-line;
         } 
         button { 
             margin-right: 10px; 
         } 
     </style> 
     <script type="text/javascript"> 
-        // Function to add new content 
         function addContent() { 
             const contentDiv = document.getElementById("content"); 
             const newContent = document.getElementById("inputText").value; 
@@ -27,11 +26,9 @@
                 alert("Please enter some content."); 
                 return; 
             } 
-            contentDiv.innerHTML += newContent + "\n"; // Append new content with a newline 
-            document.getElementById("inputText").value = ""; // Clear input field 
+            contentDiv.innerHTML += newContent + "\n";
+            document.getElementById("inputText").value = "";
         } 
- 
-        // Function to replace existing content 
         function replaceContent() { 
             const contentDiv = document.getElementById("content"); 
             const newContent = document.getElementById("inputText").value; 
@@ -39,14 +36,13 @@
                 alert("Please enter some content."); 
                 return; 
             } 
-            contentDiv.innerText = newContent; // Replace entire content 
-            document.getElementById("inputText").value = ""; // Clear input field 
+            contentDiv.innerText = newContent;
+            document.getElementById("inputText").value = ""; 
         } 
  
-        // Function to delete all content 
         function deleteContent() { 
             const contentDiv = document.getElementById("content"); 
-            contentDiv.innerText = ""; // Clear all content 
+            contentDiv.innerText = "";
         } 
     </script> 
 </head> 

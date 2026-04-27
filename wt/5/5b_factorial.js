@@ -8,8 +8,6 @@ function factorial(num) {
     } 
     return result; 
 } 
- 
 n = parseInt(prompt("Enter a number to find its factorial:")); 
- 
 factorialResult = factorial(n); 
 alert("The factorial of " + n + " is: " + factorialResult); 
